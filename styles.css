@@ -1,72 +1,96 @@
-/* your code here */body {
-    background-color: #00D084;
+body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    background-color: #00D084;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-
-.card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    display: flex;
-    overflow: hidden;
-    width: 500px;
-}
-
-.card img {
-    max-width: 100%;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-
-.card-content {
-    padding: 20px;
-    flex: 1;
-}
-
-.card-content h1 {
-    font-size: 24px;
     margin: 0;
-    color: #333;
+}
+
+.product__photo, .product__info {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-main img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.photo-album ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.photo-album ul li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product__info {
+    max-width: 400px;
+}
+
+.product__info h1 {
+    margin-top: 0;
 }
 
 .price {
-    color: #FF5252;
+    color: #E44C4C;
     font-size: 24px;
-    margin: 10px 0;
+    font-weight: bold;
 }
 
-.color-options img {
+.code {
+    color: #555;
+}
+
+.variant ul {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+}
+
+.variant ul li img {
     width: 30px;
     height: 30px;
-    border: 1px solid #ccc;
-    border-radius: 50%;
-    margin-right: 10px;
     cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #ddd;
 }
 
-.color-options img.selected {
-    border: 2px solid #333;
-}
-
-.benefits {
+.description ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0;
-    color: #666;
 }
 
 .add-to-cart {
-    background-color: #FF5252;
+    background-color: #E44C4C;
     color: white;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
 }
+
+.add-to-cart:hover {
+    background-color: #d43d3d;
+}
+
 
