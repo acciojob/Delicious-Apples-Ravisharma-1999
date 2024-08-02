@@ -1,96 +1,66 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #00D084;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+body{
+	background-color: #68fc99;
 }
-
-.product__photo, .product__info {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.heading{
+	font-size: 25px;
+	margin-left: 13rem;
 }
-
-.photo-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.small-poster{
+	position: absolute;
+	left: -40px;
+	background-color: white;
+	box-shadow: 0 5px 8px rgba(0,0,0, 0.2);
+	height: 350px;
+	width: 250px;
+	border-radius: 10px;
+	margin-top: 10px;
 }
-
-.photo-main img {
-    width: 300px;
-    height: 300px;
-    border-radius: 10px;
+.amount{
+	font-size: 40px;
+	color: red;
 }
-
-.photo-album ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 10px;
+.variant{
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+	margin-top: 1.5rem
 }
-
-.photo-album ul li img {
-    width: 50px;
-    height: 50px;
-    border-radius: 5px;
-    cursor: pointer;
+.variant ul{
+	list-style-type: none;
+	display: flex
 }
-
-.product__info {
-    max-width: 400px;
+.variant ul img{
+	width: 20px;
+	height: 20px;
+	object-fit: cover;
+	box-shadow: 0 5px 8px rgba(0,0,0, 0.2);
 }
-
-.product__info h1 {
-    margin-top: 0;
+.poster{
+	position: relative;
+	width: 400px;
+	height: 400px;
+	background-color: white;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+	padding: 20px;
+	margin-left: 5.5rem;
+	border-radius: 5px;
 }
-
-.price {
-    color: #E44C4C;
-    font-size: 24px;
-    font-weight: bold;
+.add-to-cart{
+	display: inline-block;
+	padding: 10px;
+	font-size: 18px;
+	background-color: red;
+	border-radius: 8px;
+	cursor: pointer;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
-
-.code {
-    color: #555;
+.right{
+	margin-left: 13rem;	
 }
-
-.variant ul {
-    display: flex;
-    gap: 10px;
-    padding: 0;
+.apple-left{
+	width: 250px;	
+	height: 280px
 }
-
-.variant ul li img {
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 2px solid #ddd;
+.apple{	
+	background: radial-gradient(#fff, #9af005);
 }
-
-.description ul {
-    list-style: none;
-    padding: 0;
-}
-
-.add-to-cart {
-    background-color: #E44C4C;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.add-to-cart:hover {
-    background-color: #d43d3d;
-}
-
-
